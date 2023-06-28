@@ -27,4 +27,4 @@ except for the `src/lib.rs` file, so don't touch auto generated files please.
 
 ### MSRV
 
-1.38.0
+1.32.0
