@@ -1,6 +1,6 @@
-extern crate apple_errno;
+extern crate apple_errnos;
 
-use apple_errno::*;
+use apple_errnos::*;
 
 pub fn main() {
     for errno in Errno::iter() {

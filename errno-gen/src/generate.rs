@@ -294,7 +294,7 @@ impl fmt::Display for Bindings {
         }
         writeln!(
             f,
-            "\n#[cfg(feature = \"iter\")]\n    const ALL: [i32; {}] = {:?};",
+            "\n#[cfg(feature = \"iter\")]\n    pub(crate) const ALL: [i32; {}] = {:?};",
             errs.len(),
             errs
         )?;
