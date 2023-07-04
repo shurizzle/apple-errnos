@@ -20,7 +20,13 @@ msrv = "1.32.0"
 [package.metadata.docs.rs]
 all-features = true
 default-target = "x86_64-apple-darwin"
-targets = ["aarch64-apple-darwin"]
+targets = [
+  "aarch64-apple-darwin",
+  "arm64_32-apple-watchos",
+  "armv7k-apple-watchos",
+  "aarch64-apple-tvos",
+]
+cargo-args = ["-Z", "build-std"]
 
 [[example]]
 name = "list"
